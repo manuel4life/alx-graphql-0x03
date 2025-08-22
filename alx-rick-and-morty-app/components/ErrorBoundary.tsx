@@ -1,7 +1,6 @@
-import React from "react";
-import { ReactNode } from "react";
+import React, { ReactNode } from "react";
+import { ErrorBoundaryProps, State } from "@/interfaces";
 import * as Sentry from "@sentry/react";
-import { ErrorBoundaryProps, State } from "../interfaces";
 
 class ErrorBoundary extends React.Component<ErrorBoundaryProps, State> {
   constructor(props: ErrorBoundaryProps) {
